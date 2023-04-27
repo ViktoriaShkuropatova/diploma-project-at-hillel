@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    min-width: 375px;
+}
+
+.container {
+    max-width: 1350px;
+    min-width: 375px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.container_legal{
+    padding: 0 30px;
+}
+
+.img-responsive{
+    width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+h1{
+    font-size: 38px;
+    line-height: 46px;
+    text-align: center;
+}
+
+h2{
+
+}

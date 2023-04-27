@@ -1,0 +1,29 @@
+.gradient {
+    height: 800px;
+    position: relative;
+    border-radius: 0 0 12px 12px;
+    background: url('../img/symbol.svg') no-repeat center top,
+                $gr-supersoft;
+}
+
+.gradient::after {
+    content: '';
+    height: 10px;
+    border-radius: 0 0 12px 12px;
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+    right: 20px;
+    background-color: red;
+}
+
+.gradient::before {
+    content: '';
+    height: 10px;
+    border-radius: 0 0 12px 12px;
+    position: absolute;
+    bottom: -20px;
+    left: 40px;
+    right: 40px;
+    background-color: black;
+}
