@@ -1,9 +1,9 @@
 .gradient {
-    height: 800px;
     position: relative;
     border-radius: 0 0 12px 12px;
     background: url('../img/symbol.svg') no-repeat center top,
                 $gr-supersoft;
+    background-size: contain;
 }
 
 .gradient::after {
@@ -14,7 +14,7 @@
     bottom: -10px;
     left: 20px;
     right: 20px;
-    background-color: red;
+    background-color: #CACADB;;
 }
 
 .gradient::before {
@@ -25,5 +25,5 @@
     bottom: -20px;
     left: 40px;
     right: 40px;
-    background-color: black;
+    background-color: #E7E7F2;
 }

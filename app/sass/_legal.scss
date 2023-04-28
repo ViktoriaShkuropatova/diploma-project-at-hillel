@@ -1,7 +1,69 @@
 .legal{
     padding-top: 126px;
+    padding-bottom: 30px;
+    text-align: center;
 
     &__title{
         color: white;
+        padding-left: 30px;
+    }
+
+    &__btn{
+        display: inline-flex;
+        text-decoration: none;
+        width: 42px;
+        height: 42px;
+        border: none;
+        margin-top: 157px;
+
+        &:hover circle {
+            stroke: #F0145A;
+        }
+
+        &:hover path {
+            stroke: #F0145A;
+        }
+    }
+}
+
+@media (min-width: 678px) {
+
+    .legal{
+        padding-top: 269px;
+
+        &__title{
+            max-width: 647px;
+            padding-left: 0;
+            margin: 0 auto;
+        }
+
+        &__btn{
+            margin-top: 417px;
+        }
+    }
+}
+
+@media (min-width: 934px) {
+    .legal{
+        padding-top: 245px;
+
+        &__title{
+            max-width: 800px;
+        }
+
+        &__btn{
+            margin-top: 289px;
+        }
+    }
+}
+
+@media (min-width: 1350px) {
+
+    .legal{
+        padding-top: 261px;
+
+        &__btn{
+            margin-top: 305px;
+        }
     }
 }

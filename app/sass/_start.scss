@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
     box-sizing: border-box;
@@ -15,9 +19,6 @@
     min-width: 375px;
     margin: 0 auto;
     padding: 0 15px;
-}
-.container_legal{
-    padding: 0 30px;
 }
 
 .img-responsive{
