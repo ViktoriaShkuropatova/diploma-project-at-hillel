@@ -48,11 +48,23 @@ h1{
 }
 
 h2{
+    font-size: 30px;
+    line-height: 37px;
+}
 
+h3{
+    font-size: 22px;
+    line-height: 27px;
 }
 
 @media (min-width: 678px) {
+
     .container_small {
         padding: 0 15px;
+    }
+
+    h2{
+        font-size: 38px;
+        line-height: 46px;
     }
 }
