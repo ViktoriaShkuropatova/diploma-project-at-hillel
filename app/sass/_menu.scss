@@ -1,0 +1,115 @@
+.menu{
+    &__btn {
+        cursor: pointer;
+        background-image: url('../img/burger.svg');
+        width: 32px;
+        height: 32px;
+        background-color: transparent;
+        border: none;
+        margin-top: 13px;
+
+        &:hover{
+            // background: $separator;
+        }
+
+        &_active{
+            background-image: url(../img/btn-close-white.svg);
+        }
+    }
+
+    &__list{
+        display: none;
+        position: absolute;
+        list-style: none;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 0;
+        background: white;
+        padding: 12px;
+
+        &_open{
+            display: block;
+        }
+
+        & a{
+            text-decoration: none;
+            font-size: 24px;
+            line-height: 29px;
+            text-align: center;
+            color: $active-regular;
+            background: $bg;
+            display: block;
+            padding: 7px 0;
+            margin-bottom: 15px;
+            border-radius: 12px;
+
+            // &.active {
+            //     color: $accent;
+            // }
+
+            // &:not(.active):hover {
+            //     background: $separator;
+            // }
+
+            &:hover {
+                background: $separator;
+            }
+        }
+    }
+}
+
+@media (min-width: 678px) {
+
+    .menu{
+
+        &__btn {
+            display: none;
+        }
+
+        &__list {
+            display: flex;
+            padding-left: 0;
+            list-style: none;
+            position: static;
+            background: none;
+            padding: 27px 0 0;
+
+            & li {
+                padding-right: 15px;
+            }
+
+            & a{
+                font-size: 16px;
+                line-height: 20px;
+                color: white;
+                background: none;
+                border-radius: 0;
+                margin: 0;
+                padding:  0;
+                border-bottom: 1px solid rgba(255, 255, 255, 0);
+
+                &:hover{
+                    background: none;
+                    border-radius: 0;
+                    border-bottom: 1px solid rgba(255, 255, 255, 1);
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 934px) {
+
+    .menu{
+        justify-self: end;
+
+        &__list{
+            padding-top: 10px;
+
+            & li {
+                padding: 0 0 0 15px;
+            }
+        }
+    }
+}
