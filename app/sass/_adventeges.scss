@@ -1,3 +1,162 @@
 .adventeges{
+    padding-top: 30px;
+    padding-bottom: 30px;
 
+    &__key-values{
+        display: flex;
+        align-items: flex-end;
+        overflow: auto;
+        padding-bottom: 30px;
+        // border-bottom: 4px solid rgba(255, 255, 255, 0.3);
+    }
+
+    &__btn{
+        cursor: pointer;
+        font-family: inherit;
+        text-decoration: none;
+        background-color: transparent;
+        border: none;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        color: $text;
+        white-space: nowrap;
+        padding: 0;
+        margin: 0 15px;
+
+        &.active {
+            background: $gr-red-text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    }
+
+    &__card{
+        padding-top: 30px;
+        position: relative;
+
+        &_padding{
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        &::before {
+            content: '';
+            width: 4px;
+            height: 315px;
+            background: rgba(255, 255, 255, 0.3);
+            transform: rotate(90deg);
+            position: absolute;
+            left: 50%;
+            top: -160px;
+        }
+    }
+
+    &__title{
+        font-size: 20px;
+        line-height: 24px;
+        color: white;
+    }
+
+    &__info{
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 30px;
+        color: white;
+        padding-top: 30px;
+    }
+}
+
+@media (min-width: 678px) {
+
+    .adventeges{
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        &__key-values{
+            padding-bottom: 60px;
+        }
+
+        &__btn{
+            font-size: 38px;
+            line-height: 46px;
+        }
+
+        &__card{
+            padding-top: 60px;
+
+            &_padding{
+                padding-right: 0;
+                padding-left: 0;
+            }
+
+            &::before {
+                height: 648px;
+                top: -325px;
+            }
+        }
+
+        &__title{
+            font-size: 30px;
+            line-height: 37px;
+        }
+    }
+}
+
+@media (min-width: 934px) {
+
+    .adventeges{
+
+        &__box{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            gap: 120px;
+
+        }
+
+        &__key-values{
+            flex-direction: column;
+            align-items: flex-end;
+            padding: 0;
+        }
+
+        &__btn{
+            margin: 0;
+            &:not(:first-child){
+                margin-top: 30px;
+            }
+        }
+
+        &__card{
+            max-width: 405px;
+
+            &_padding{
+                padding-top: 0;
+            }
+
+            &::before {
+                transform: rotate(0deg);
+                left: -60px;
+                top: 0;
+                height: 303px;
+            }
+        }
+    }
+}
+@media (min-width: 1350px) {
+
+    .adventeges{
+
+        &__card{
+            max-width: 581px;
+
+            &::before {
+                top: -30px;
+            }
+        }
+    }
 }

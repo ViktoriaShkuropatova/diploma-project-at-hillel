@@ -50,6 +50,10 @@ html {
   padding: 0 15px;
 }
 
+.container_small {
+  padding: 0 30px;
+}
+
 .img-responsive {
   width: 100%;
   height: auto;
@@ -72,6 +76,11 @@ h1 {
   text-align: center;
 }
 
+@media (min-width: 678px) {
+  .container_small {
+    padding: 0 15px;
+  }
+}
 .header {
   display: grid;
   grid-template-columns: 1fr -webkit-min-content;
@@ -354,8 +363,7 @@ h1 {
 .gradient {
   position: relative;
   border-radius: 0 0 12px 12px;
-  background: url("../img/symbol.svg") no-repeat center top, linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
-  background-size: contain;
+  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
 }
 
 .gradient::after {
@@ -380,14 +388,30 @@ h1 {
   background-color: #E7E7F2;
 }
 
+.gradient__simvol {
+  background: url("../img/symbol.svg") no-repeat center top;
+}
+
+@media (min-width: 678px) {
+  .gradient__simvol {
+    background-size: cover;
+  }
+}
+@media (min-width: 678px) and (min-width: 934px) {
+  .gradient__simvol {
+    background-size: contain;
+  }
+}
 .legal {
   padding-top: 126px;
   padding-bottom: 30px;
   text-align: center;
 }
 .legal__title {
+  max-width: 345px;
   color: white;
   padding-left: 30px;
+  margin: 0 auto;
 }
 .legal__btn {
   display: -webkit-inline-box;
@@ -436,6 +460,156 @@ h1 {
   }
   .legal__btn {
     margin-top: 305px;
+  }
+}
+.adventeges {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.adventeges__key-values {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  overflow: auto;
+  padding-bottom: 30px;
+}
+.adventeges__btn {
+  cursor: pointer;
+  font-family: inherit;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  color: #B3B3BA;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0 15px;
+}
+.adventeges__btn.active {
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.adventeges__card {
+  padding-top: 30px;
+  position: relative;
+}
+.adventeges__card_padding {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.adventeges__card::before {
+  content: "";
+  width: 4px;
+  height: 315px;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  position: absolute;
+  left: 50%;
+  top: -160px;
+}
+.adventeges__title {
+  font-size: 20px;
+  line-height: 24px;
+  color: white;
+}
+.adventeges__info {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  color: white;
+  padding-top: 30px;
+}
+
+@media (min-width: 678px) {
+  .adventeges {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .adventeges__key-values {
+    padding-bottom: 60px;
+  }
+  .adventeges__btn {
+    font-size: 38px;
+    line-height: 46px;
+  }
+  .adventeges__card {
+    padding-top: 60px;
+  }
+  .adventeges__card_padding {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .adventeges__card::before {
+    height: 648px;
+    top: -325px;
+  }
+  .adventeges__title {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+@media (min-width: 934px) {
+  .adventeges__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+    gap: 120px;
+  }
+  .adventeges__key-values {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding: 0;
+  }
+  .adventeges__btn {
+    margin: 0;
+  }
+  .adventeges__btn:not(:first-child) {
+    margin-top: 30px;
+  }
+  .adventeges__card {
+    max-width: 405px;
+  }
+  .adventeges__card_padding {
+    padding-top: 0;
+  }
+  .adventeges__card::before {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    left: -60px;
+    top: 0;
+    height: 303px;
+  }
+}
+@media (min-width: 1350px) {
+  .adventeges__card {
+    max-width: 581px;
+  }
+  .adventeges__card::before {
+    top: -30px;
   }
 }
 /*# sourceMappingURL=style.css.map */

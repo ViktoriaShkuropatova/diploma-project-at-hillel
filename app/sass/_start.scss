@@ -21,6 +21,10 @@ html {
     padding: 0 15px;
 }
 
+.container_small {
+    padding: 0 30px;
+}
+
 .img-responsive{
     width: 100%;
     height: auto;
@@ -45,4 +49,10 @@ h1{
 
 h2{
 
+}
+
+@media (min-width: 678px) {
+    .container_small {
+        padding: 0 15px;
+    }
 }

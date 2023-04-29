@@ -1,9 +1,9 @@
 .gradient {
     position: relative;
     border-radius: 0 0 12px 12px;
-    background: url('../img/symbol.svg') no-repeat center top,
-                $gr-supersoft;
-    background-size: contain;
+    // background: url('../img/symbol.svg') no-repeat center top,
+    //             $gr-supersoft;
+    background: $gr-supersoft;
 }
 
 .gradient::after {
@@ -26,4 +26,22 @@
     left: 40px;
     right: 40px;
     background-color: #E7E7F2;
+}
+
+.gradient__simvol{
+    background: url('../img/symbol.svg') no-repeat center top;
+    // background-size: contain;
+}
+
+@media (min-width: 678px) {
+
+    .gradient__simvol{
+        background-size: cover;
+    }
+
+    @media (min-width: 934px) {
+        .gradient__simvol{
+            background-size: contain;
+        }
+    }
 }
