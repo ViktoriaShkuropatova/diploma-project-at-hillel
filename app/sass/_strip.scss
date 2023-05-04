@@ -1,0 +1,23 @@
+.strip{
+    position: relative;
+    z-index: 0;
+
+    &::before {
+        content: '';
+        width: 100%;
+        height: 45px;
+        position: absolute;
+        background: $bg;
+        z-index: -1;
+    }
+}
+
+@media (min-width: 678px) {
+
+    .strip{
+
+        &::before {
+            display: none;
+        }
+    }
+}

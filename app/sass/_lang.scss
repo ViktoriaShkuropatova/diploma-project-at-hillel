@@ -19,13 +19,17 @@
         transition-property: background;
 
         &.active {
-            color: #ffffff;
+            color: white;
             background: $accent;
         }
 
         &:not(.active):hover {
             background: rgba(255, 255, 255, 0.2);;
         }
+    }
+
+    &_white a{
+        color: white;
     }
 }
 

@@ -1,8 +1,8 @@
-.publications{
+.publications {
     padding-top: 30px;
     background-color: $bg;
 
-    &__link{
+    &__link {
         text-decoration: none;
         font-size: 14px;
         line-height: 17px;
@@ -12,7 +12,7 @@
         display: inline-flex;
         align-items: center;
 
-        &::after{
+        &::after {
             content: '';
             background-image: url(../img/arrow.svg);
             width: 12px;
@@ -23,46 +23,69 @@
         }
     }
 
-    &__title{
+    &__title {
         font-size: 30px;
         line-height: 37px;
         background: $gr-red-text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        text-fill-color: transparent;
         padding-top: 5px;
     }
 
-    &__list{
+    &__list {
         // margin: 0 -30px;
     }
 
-    &__item{
+    &__item {
+        background-color: white;
         border-radius: 8px;
-        padding: 230px 30px 30px;
         margin-top: 29px;
+        display: flex;
+        flex-direction: column;
     }
 
-    &__item_01{
-        background: url('../img/publication-1.png') no-repeat top center, white;
+    &__item_01 {
+        &::before {
+            content: '';
+            width: auto;
+            height: 200px;
+            background: url('../img/publication-1.png') no-repeat top center, white;
+            background-size: cover;
+        }
     }
 
-    &__item_02{
-        background: url('../img/publication-2.png') no-repeat top center, white;
+    &__item_02 {
+        &::before {
+            content: '';
+            width: auto;
+            height: 200px;
+            background: url('../img/publication-2.png') no-repeat top center, white;
+            background-size: cover;
+        }
     }
 
-    &__item_03{
-        background: url('../img/Publication-3.png') no-repeat top center, white;
+    &__item_03 {
+        &::before {
+            content: '';
+            width: auto;
+            height: 200px;
+            background: url('../img/publication-3.png') no-repeat top center, white;
+            background-size: cover;
+        }
     }
 
-    &__subtitle{
+    &__box {
+        padding: 30px;
+    }
+
+    &__subtitle {
         font-size: 16px;
         line-height: 20px;
         color: $active-regular;
     }
 
-    &__data{
+    &__data {
         font-size: 12px;
         line-height: 15px;
         letter-spacing: 1px;
@@ -73,7 +96,7 @@
         border-bottom: 4px solid $separator;
     }
 
-    &__text{
+    &__text {
         font-weight: 400;
         font-size: 14px;
         line-height: 22px;
@@ -84,18 +107,61 @@
 
 @media (min-width: 678px) {
 
-    .publications{
+    .publications {
 
-        &__title{
+        &__title {
             padding-top: 10px;
+            font-size: 38px;
+            line-height: 46px;
         }
 
-        &__list{
+        &__list {
             display: flex;
             flex-wrap: wrap;
             align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        &__item_01 {
+            width: 47%;
+            margin-right: 15px;
+        }
+
+        &__item_02 {
+            width: 47%;
+            margin-left: 15px;
         }
     }
 }
-@media (min-width: 934px) {}
-@media (min-width: 1350px) {}
+
+@media (min-width: 934px) {
+
+    .publications {
+
+        &__item {
+            width: 31%;
+        }
+
+        &__item_01 {
+            margin-right: 15px;
+        }
+
+        &__item_02 {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+        &__item_03 {
+            margin-left: 15px;
+        }
+    }
+}
+@media (min-width: 1350px) {
+
+    .publications {
+
+        &__box{
+            padding: 25px;
+        }
+    }
+}
