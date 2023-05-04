@@ -1,0 +1,101 @@
+.publications{
+    padding-top: 30px;
+    background-color: $bg;
+
+    &__link{
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $active-regular;
+        display: inline-flex;
+        align-items: center;
+
+        &::after{
+            content: '';
+            background-image: url(../img/arrow.svg);
+            width: 12px;
+            height: 12px;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-left: 2px;
+        }
+    }
+
+    &__title{
+        font-size: 30px;
+        line-height: 37px;
+        background: $gr-red-text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        padding-top: 5px;
+    }
+
+    &__list{
+        // margin: 0 -30px;
+    }
+
+    &__item{
+        border-radius: 8px;
+        padding: 230px 30px 30px;
+        margin-top: 29px;
+    }
+
+    &__item_01{
+        background: url('../img/publication-1.png') no-repeat top center, white;
+    }
+
+    &__item_02{
+        background: url('../img/publication-2.png') no-repeat top center, white;
+    }
+
+    &__item_03{
+        background: url('../img/Publication-3.png') no-repeat top center, white;
+    }
+
+    &__subtitle{
+        font-size: 16px;
+        line-height: 20px;
+        color: $active-regular;
+    }
+
+    &__data{
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $text;
+        padding-top: 15px;
+        padding-bottom: 16px;
+        border-bottom: 4px solid $separator;
+    }
+
+    &__text{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: black;
+        padding-top: 15px;
+    }
+}
+
+@media (min-width: 678px) {
+
+    .publications{
+
+        &__title{
+            padding-top: 10px;
+        }
+
+        &__list{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+    }
+}
+@media (min-width: 934px) {}
+@media (min-width: 1350px) {}

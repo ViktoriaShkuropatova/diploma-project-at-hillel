@@ -13,8 +13,8 @@
 </head>
 <body class="body">
     <div class="gradient">
-    <div class="gradient__simvol container">
-        <header class="header">
+    <div class="gradient__simvol">
+        <header class="header container">
             <div class="header__data">
                 <ul class="lang">
                     <li><a href="#">ук</a></li>
@@ -25,7 +25,7 @@
                     Kyiv, Mechnikova str., 14/1
                 </div>
                 <a class="header__phone" href="tel:0800211927">0800 211 927</a>
-                <a class="header__fb" href="#">
+                <a class="header__fb" href="#" aria-label="link facebook">
                     <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_22721_7601)">
                             <path d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z" fill="#FFFFFF" />
@@ -42,15 +42,15 @@
                 <a class="header__logo" href="#">
                     <img src="./img/logo.svg" width="73px" height="57px" alt="">
                 </a>
-                <span class="header__breadcrumbs">service</span>
+                <!-- <span class="header__breadcrumbs"></span> -->
             </div>
             <nav class="menu">
-                <button type="button" class="menu__btn js-mobile-btn"></button>
+                <button type="button" class="menu__btn menu__btn_index js-mobile-btn"></button>
                 <ul class="menu__list js-mobile-menu">
-                    <li><a href="#">about us</a></li>
+                    <li><a href="about.html">about us</a></li>
                     <li><a href="#">services</a></li>
                     <li><a href="#">team</a></li>
-                    <li><a class="active" href="#">publications</a></li>
+                    <li><a href="#">publications</a></li>
                     <li><a href="#">contact</a></li>
                 </ul>
             </nav>
@@ -117,11 +117,106 @@
     </section>
     </div>
     <main>
-        <section class=""></section>
-        <section></section>
-        <section></section>
+        <section class="team container container_small">
+            <h2 class="visually-hidden">Our team</h2>
+            <div class="team__slider js-team-slider">
+                <article class="team__item">
+                    <div class="team__box">
+                        <a class="team__link" href="#">команда</a>
+                        <p class="team__quote">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</p>
+                        <p class="team__member">Олександр Олександровський</p>
+                        <p class="team__position">Керуючий партнер</p>
+                    </div>
+                </article>
+                <article class="team__item">
+                    <div class="team__box">
+                        <a class="team__link" href="#">команда</a>
+                        <p class="team__quote">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</p>
+                        <p class="team__member">Олександр Олександровський</p>
+                        <p class="team__position">Керуючий партнер</p>
+                    </div>
+                </article>
+                <article class="team__item">
+                    <div class="team__box">
+                        <a class="team__link" href="#">команда</a>
+                        <p class="team__quote">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</p>
+                        <p class="team__member">Олександр Олександровський</p>
+                        <p class="team__position">Керуючий партнер</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="clients">
+            <h2 class="clients__title">They already trust us</h2>
+            <div class="clients__cards">
+                <article class="clients__item clients__item_01">
+                </article>
+                <article class="clients__item clients__item_02">
+                </article>
+                <article class="clients__item clients__item_03">
+                </article>
+                <article class="clients__item clients__item_04">
+                </article>
+                <article class="clients__item clients__item_05">
+                </article>
+                <article class="clients__item clients__item_06">
+                </article>
+                <article class="clients__item clients__item_07">
+                </article>
+                <article class="clients__item clients__item_08">
+                </article>
+                <article class="clients__item clients__item_09">
+                </article>
+                <article class="clients__item clients__item_10">
+                </article>
+                <article class="clients__item clients__item_11">
+                </article>
+                <article class="clients__item clients__item_12">
+                </article>
+            </div>
+        </section>
+        <section class="publications">
+            <div class="container container_small">
+            <a class="publications__link" href="">Publications</a>
+            <h2 class="publications__title h2">We have something to tell</h2>
+            <div class="publications__list">
+                <article class="publications__item publications__item_01">
+                    <h3 class="publications__subtitle">Equity associate</h3>
+                    <p class="publications__data">April 22</p>
+                    <p class="publications__text">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
+                </article>
+                <article class="publications__item publications__item_02">
+                    <h3 class="publications__subtitle">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</h3>
+                    <p class="publications__data">September 29</p>
+                    <p class="publications__text">And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
+                </article>
+                <article class="publications__item publications__item_03">
+                    <h3 class="publications__subtitle">Millennial Testament</h3>
+                    <p class="publications__data">August 19</p>
+                    <p class="publications__text">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
+                </article>
+            </div>
+            </div>
+        </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <div class="footer__content container container_small">
+            <article class="footer__address-info">
+                <p class="footer__address">Kyiv, Mechnikova str., 14/1</p>
+                <a class="footer__location" href="#">On map</a>
+            </article>
+            <article class="footer__contact">
+                <a class="footer__fb" href="#" aria-label="link facebook">
+                    <svg width="39" height="38" viewBox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M38.5 19.1161C38.5 8.55857 29.9934 0 19.5 0C9.00658 0 0.5 8.55857 0.5 19.1161C0.5 28.6575 7.44803 36.5659 16.5312 38V24.6419H11.707V19.1161H16.5312V14.9046C16.5312 10.1136 19.3678 7.46723 23.7078 7.46723C25.7866 7.46723 27.9609 7.84059 27.9609 7.84059V12.545H25.5651C23.2048 12.545 22.4688 14.0185 22.4688 15.5302V19.1161H27.7383L26.8959 24.6419H22.4688V38C31.552 36.5659 38.5 28.6575 38.5 19.1161Z" fill="#24A3FF"/>
+                    </svg>
+                </a>
+                <a class="footer__phone" href="tel:0800211927">0800 211 927</a>
+                <a class="footer__mail" href="mailto:contact@forstudy.space">contact@forstudy.space</a>
+            </article>
+            <p class="footer__copyright">© 2021 HLEGAL Law company, LLC</p>
+        </div>
+    </footer>
     <script src="js/all.js"></script>
 </body>
 </html>

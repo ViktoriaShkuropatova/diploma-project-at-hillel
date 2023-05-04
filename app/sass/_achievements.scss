@@ -1,0 +1,172 @@
+.achievements{
+    background: $bg;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &__title {
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $main-regular;
+    }
+
+    &__slider{
+        padding: 30px 30px 0;
+    }
+
+    &__item{
+        height: 90px;
+        background-color: white;
+        border-radius: 12px;
+        margin: 0 15px;
+        position: relative;
+    }
+
+    &__item_01{
+        &::after{
+            content: '';
+            width: 54px;
+            height: 40px;
+            background: url('../img/achievment-1.png') no-repeat center center, white;
+            background-size: contain;
+            position: absolute;
+            left: calc(50% - 53.33px/2 + 0.17px);
+            top: calc(50% - 40px/2 - 0.6px);
+        }
+    }
+
+    &__item_02{
+        &::after{
+            content: '';
+            width: 106px;
+            height: 40px;
+            background: url('../img/achievment-2.png') no-repeat center center, white;
+            background-size: contain;
+            position: absolute;
+            left: calc(50% - 106px/2);
+            top: calc(50% - 40px/2 - 0.6px);
+        }
+    }
+
+    &__item_03{
+        &::after{
+            content: '';
+            width: 130px;
+            height: 40px;
+            background: url('../img/achievment-3.png') no-repeat center center, white;
+            background-size: contain;
+            position: absolute;
+            left: calc(50% - 130px/2);
+            top: calc(50% - 40px/2 - 0.6px);
+        }
+    }
+
+    &__item_04{
+        &::after{
+            content: '';
+            width: 111px;
+            height: 40px;
+            background: url('../img/achievment-4.png') no-repeat center center, white;
+            background-size: contain;
+            position: absolute;
+            left: calc(50% - 110.67px/2 + 0.33px);
+            top: calc(50% - 40px/2 - 0.6px);
+        }
+    }
+
+    &__dots{
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+        list-style: none;
+        padding-top: 22px;
+        li{
+            padding: 0 7px;
+
+            &.slick-active{
+                button {
+                    background-color: rgba(36, 163, 255, 1);
+                }
+            }
+        }
+
+        button {
+            cursor: pointer;
+            font-size: 0;
+            width: 16px;
+            height: 16px;
+            background-color: rgba(36, 163, 255, 0.2);
+            border: none;
+            border-radius: 50%;
+            transition-duration: 2000ms;
+            transition-property: background-color;
+
+            &:hover{
+                background-color: rgba(36, 163, 255, 0.6);
+            }
+        }
+    }
+}
+
+@media (min-width: 678px) {
+
+    .achievements{
+
+        &__slider{
+            padding: 30px 0 0;
+        }
+
+        &__item{
+            width: 20%;
+            margin: 0 16px;
+        }
+    }
+}
+
+@media (min-width: 934px) {
+
+    .achievements{
+
+        &__item{
+            height: 110px;
+        }
+
+        &__item_01{
+            &::after{
+                width: 80px;
+                height: 60px;
+                left: calc(50% - 80px/2);
+                top: calc(50% - 60px/2);
+            }
+        }
+
+        &__item_02{
+            &::after{
+                width: 159px;
+                height: 60px;
+                left: calc(50% - 159px/2 + 0.5px);
+                top: calc(50% - 60px/2);
+            }
+        }
+
+        &__item_03{
+            &::after{
+                width: 195px;
+                height: 60px;
+                left: calc(50% - 195px/2 + 0.5px);
+                top: calc(50% - 60px/2);
+            }
+        }
+
+        &__item_04{
+            &::after{
+                width: 166px;
+                height: 60px;
+                left: calc(50% - 166px/2);
+                top: calc(50% - 60px/2);
+            }
+        }
+    }
+}

@@ -15,7 +15,7 @@
             content: '';
             width: 12px;
             height: 12px;
-            background-image: url(../img/arrow.svg);
+            background-image: url('../img/arrow.svg');
             background-repeat: no-repeat;
             background-position: center;
             margin-left: 2px;
@@ -31,7 +31,7 @@
     }
 
     &__article{
-        padding-top: 30px;
+        padding-top: 31px;
     }
 
     &__img{

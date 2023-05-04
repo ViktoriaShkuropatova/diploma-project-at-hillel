@@ -1,0 +1,112 @@
+.clients{
+    text-align: center;
+    padding: 60px 0 0;
+
+    &__title{
+        font-size: 14px;
+        line-height: 17px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $main-regular;
+    }
+
+    &__cards{
+        padding-top: 30px;
+    }
+
+    &__item{
+        margin: 0 auto;
+        width: 100%;
+        height: 120px;
+    }
+
+    &__item_01{
+        background: url('../img/hillel-logo.png') no-repeat center center, #1C4280;
+    }
+
+    &__item_02{
+        background: url('../img/wannabiz-logo.png')  no-repeat center center, #143646;
+    }
+
+    &__item_03{
+        background: url('../img/tapgerine-logo.png')  no-repeat center center, #F48B30;
+    }
+
+    &__item_04{
+        background: url('../img/3dlook-logo.png')  no-repeat center center, #9E4DC3;
+    }
+
+    &__item_05{
+        background: url('../img/orangear-logo.png')  no-repeat center center, #FD9339;
+    }
+
+    &__item_06{
+        background: url('../img/adtelligent-logo.png')  no-repeat center center, #E2E2E4;
+    }
+}
+
+.clients__item_07,
+.clients__item_08,
+.clients__item_09,
+.clients__item_10,
+.clients__item_11,
+.clients__item_12 {
+    display: none;
+}
+
+@media (min-width: 678px) {
+
+    .clients{
+
+        &__cards{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+
+        &__item{
+            width: 33.33%;
+        }
+
+        &__item_07{
+            display: block;
+            background: url('../img/clickky-logo.png')  no-repeat center center, #C71C36;
+        }
+
+        &__item_08{
+            display: block;
+            background: url('../img/ecolease-logo.png')  no-repeat center center, #DCF3F9;
+        }
+
+        &__item_09{
+            display: block;
+            background: url('../img/infratek-logo.png')  no-repeat center center, #EAEAEA;
+        }
+
+        &__item_10{
+            display: block;
+            background: url('../img/city-park-logo.png')  no-repeat center center, #282240;
+        }
+
+        &__item_11{
+            display: block;
+            background: url('../img/art-print-studio-logo.png')  no-repeat center center, #1D4568;
+        }
+
+        &__item_12{
+            display: block;
+            background: url('../img/ultimate-card-logo.png')  no-repeat center center, #000000;
+        }
+    }
+}
+
+@media (min-width: 934px) {
+
+    .clients{
+
+        &__item{
+            width: 25%;
+        }
+    }
+}

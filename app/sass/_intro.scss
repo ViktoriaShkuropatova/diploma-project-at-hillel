@@ -1,0 +1,133 @@
+.intro{
+    padding-top: 33px;
+    padding-bottom: 30px;
+
+    &__title {
+        background: $gr-red-text;
+        text-align: left;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 30px;
+        color: black;
+        padding-top: 28px;
+
+        &:not(:first-of-type) {
+            padding-top: 23px;
+        }
+    }
+
+    &__list{
+        margin-top: 30px;
+        list-style: none;
+        padding-left: 0;
+        border-left: 4px solid $separator;
+
+        & li{
+            padding-left: 30px;
+        }
+    }
+
+    &__item:not(:first-child) {
+        padding-top: 40px;
+    }
+
+    &__quantity{
+        font-size: 36px;
+        line-height: 44px;
+        background: $gr-red-text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    &__quantity_01{
+
+        &::before{
+            content: '';
+            background-image: url('../img/flag.svg');
+            width: 24px;
+            height:  28px;
+            margin-right: 13px;
+        }
+    }
+
+    &__quantity_02{
+
+        &::before{
+            content: '';
+            background-image: url('../img/bag.svg');
+            width: 26px;
+            height:  22px;
+            margin-right: 12px;
+        }
+    }
+
+    &__quantity_03{
+
+        &::before{
+            content: '';
+            background-image: url('../img/star.svg');
+            width: 32px;
+            height:  32px;
+            margin-right: 9px;
+        }
+    }
+
+    &__desc{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: $main-regular;
+        padding-top: 10px;
+    }
+}
+
+@media (min-width: 678px) {
+
+    .intro{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+@media (min-width: 934px) {
+
+    .intro{
+        display: flex;
+        align-items: flex-start;
+
+        &__info{
+            max-width: 486px;
+            padding-right: 30px;
+        }
+
+        &__list{
+            margin-top: 0;
+            max-width: 388px;
+
+        }
+    }
+}
+
+@media (min-width: 1350px) {
+
+    .intro{
+        justify-content: space-between;
+
+        &__info{
+            max-width: 662px;
+            padding-right: 0;
+        }
+
+    }
+}

@@ -18,6 +18,11 @@
         border: none;
         margin-top: 157px;
 
+        & svg path, circle {
+            transition-duration: 300ms;
+            transition-property: stroke;
+        }
+
         &:hover circle {
             stroke: #F0145A;
         }
@@ -46,6 +51,7 @@
 }
 
 @media (min-width: 934px) {
+
     .legal{
         padding-top: 245px;
 

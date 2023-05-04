@@ -1,20 +1,23 @@
 .menu{
     &__btn {
         cursor: pointer;
-        background-image: url('../img/burger.svg');
-        width: 32px;
-        height: 32px;
         background-color: transparent;
         border: none;
         margin-top: 13px;
-
-        &:hover{
-            // background: $separator;
-        }
+        width: 32px;
+        height: 32px;
 
         &_active{
-            background-image: url(../img/btn-close-white.svg);
+            background-image: url('../img/btn-close-white.svg');
         }
+    }
+
+    &__btn_index{
+        background-image: url('../img/burger.svg');
+    }
+
+    &__btn_about{
+        background-image: url('../img/burger-about.svg');
     }
 
     &__list{
@@ -43,18 +46,17 @@
             padding: 7px 0;
             margin-bottom: 15px;
             border-radius: 12px;
+            transition-duration: 300ms;
+            transition-property: background, color, border-color;
 
-            // &.active {
-            //     color: $accent;
-            // }
+            &.active {
+                color: $accent;
+            }
 
-            // &:not(.active):hover {
-            //     background: $separator;
-            // }
-
-            &:hover {
+            &:not(.active):hover {
                 background: $separator;
             }
+
         }
     }
 }
@@ -87,12 +89,32 @@
                 border-radius: 0;
                 margin: 0;
                 padding:  0;
-                border-bottom: 1px solid rgba(255, 255, 255, 0);
+                border-bottom: 2px solid rgba(255, 255, 255, 0);
 
-                &:hover{
-                    background: none;
+                &.active {
+                    border-color: $accent;
+                }
+
+                &:not(.active):hover {
+                    background: inherit;
                     border-radius: 0;
-                    border-bottom: 1px solid rgba(255, 255, 255, 1);
+                    border-bottom: 2px solid rgba(255, 255, 255, 1);
+                }
+            }
+        }
+
+        &__list-about{
+            padding: 25px 0 0;
+
+            & li{
+                padding-right: 16px;
+            }
+
+            & a{
+                color: $active-regular;
+
+                &:not(.active):hover {
+                    border-color: rgba(36, 163, 255, 1);
                 }
             }
         }

@@ -1,46 +1,49 @@
 .gradient {
     position: relative;
     border-radius: 0 0 12px 12px;
-    // background: url('../img/symbol.svg') no-repeat center top,
-    //             $gr-supersoft;
     background: $gr-supersoft;
-}
 
-.gradient::after {
-    content: '';
-    height: 10px;
-    border-radius: 0 0 12px 12px;
-    position: absolute;
-    bottom: -10px;
-    left: 20px;
-    right: 20px;
-    background-color: #CACADB;;
-}
+    &::after {
+        content: '';
+        height: 10px;
+        border-radius: 0 0 12px 12px;
+        position: absolute;
+        bottom: -10px;
+        left: 20px;
+        right: 20px;
+        background-color: #CACADB;;
+    }
 
-.gradient::before {
-    content: '';
-    height: 10px;
-    border-radius: 0 0 12px 12px;
-    position: absolute;
-    bottom: -20px;
-    left: 40px;
-    right: 40px;
-    background-color: #E7E7F2;
-}
+    &::before {
+        content: '';
+        height: 10px;
+        border-radius: 0 0 12px 12px;
+        position: absolute;
+        bottom: -20px;
+        left: 40px;
+        right: 40px;
+        background-color: #E7E7F2;
+    }
 
-.gradient__simvol{
-    background: url('../img/symbol.svg') no-repeat center top;
-    // background-size: contain;
+    &__simvol {
+        background: url('../img/symbol.svg') no-repeat center top;
+    }
 }
 
 @media (min-width: 678px) {
 
-    .gradient__simvol{
-        background-size: cover;
-    }
+    .gradient{
 
-    @media (min-width: 934px) {
-        .gradient__simvol{
+        &__simvol {
+            background-size: cover;
+        }
+    }
+}
+@media (min-width: 934px) {
+
+    .gradient{
+
+        &__simvol {
             background-size: contain;
         }
     }

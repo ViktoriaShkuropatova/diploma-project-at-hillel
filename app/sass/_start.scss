@@ -12,6 +12,7 @@ html {
     font-weight: 700;
     font-style: normal;
     min-width: 375px;
+    background-color: white;
 }
 
 .container {
@@ -41,18 +42,18 @@ html {
     overflow: hidden;
 }
 
-h1{
+.h1 {
     font-size: 38px;
     line-height: 46px;
     text-align: center;
 }
 
-h2{
+.h2 {
     font-size: 30px;
     line-height: 37px;
 }
 
-h3{
+.h3 {
     font-size: 22px;
     line-height: 27px;
 }
@@ -63,8 +64,15 @@ h3{
         padding: 0 15px;
     }
 
-    h2{
+    .h2 {
         font-size: 38px;
         line-height: 46px;
+    }
+}
+
+@media (min-width: 1350px) {
+
+    .container_tiny{
+        padding: 0 135px;
     }
 }

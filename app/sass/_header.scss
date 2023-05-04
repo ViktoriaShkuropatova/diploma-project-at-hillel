@@ -7,15 +7,9 @@
         grid-column: span 2;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding-top: 10px;
         padding-bottom: 10px;
-        position: relative;
-
-        // &::before{
-        //     content: '';
-        //     position: absolute;
-        //     background: rgba(245, 245, 250, 0.2);
-        // }
     }
 
     &__phone{
@@ -25,9 +19,17 @@
         color: white;
     }
 
+    &__phone_about{
+        color: $text;
+    }
+
     &__logo-box {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
+    }
+
+    &__logo-box_about{
+        padding-top: 15px;
     }
 
     &__logo {
@@ -35,23 +37,31 @@
     }
 
     &__breadcrumbs {
+        font-weight: 400;
         font-size: 20px;
         line-height: 24px;
-        color: #323264;
+        color: $main-regular;
         display: inline-flex;
         align-items: center;
+        // margin-left: 4px;
 
         &::before {
             content: '';
             background-image: url('../img/slash.svg');
+            background-repeat: no-repeat;
+            background-position:  center center;
             width: 12px;
             height: 26px;
+            padding-right: 5px;
+            padding-left: 4px;
         }
+    }
+
+    &__breadcrumbs_about{
+        padding-bottom: 12px;
     }
 }
 
-.header__breadcrumbs,
-.header__breadcrumbs::before,
 .header__adress,
 .header__fb {
     display: none;
@@ -70,6 +80,10 @@
             padding-top: 50px;
         }
 
+        &__logo-box_about{
+            padding-top: 0;
+        }
+
         &__logo{
             margin-top: 19px;
             & img {
@@ -78,10 +92,15 @@
             }
         }
 
-        &__breadcrumbs::before {
+        &__breadcrumbs{
+            font-size: 36px;
+            line-height: 44px;
+
+            &::before {
             width: 21px;
             height: 47px;
             background-size: cover;
+            }
         }
 
         &__adress {
@@ -111,6 +130,10 @@
             }
         }
 
+        &__adress_about{
+            color: $text;
+        }
+
         &__phone{
             margin-left: 6px;
             display: inline-flex;
@@ -130,6 +153,11 @@
             display: block;
             margin-left: 6px;
 
+            & svg path {
+                transition-duration: 300ms;
+                transition-property: fill;
+            }
+
             &:hover svg path{
                 fill: $accent;
             }
@@ -138,9 +166,10 @@
 }
 
 @media (min-width: 934px) {
+
     .header {
         grid-template-rows: repeat(2, min-content);
-        grid-template-columns: min-content 1fr;
+        grid-template-columns: auto 1fr;
 
         &__data {
             grid-column: 2;
@@ -156,6 +185,10 @@
         &__logo{
             margin-top: 50px;
         }
+
+        &__breadcrumbs_about{
+            padding-bottom: 0;
+            padding-top: 27px;
+        }
     }
 }
-

@@ -1,0 +1,72 @@
+.more{
+    padding-top: 30px;
+    padding-bottom: 60px;
+
+    &__text{}
+
+    &__paragraph{
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 30px;
+        color: black;
+
+        &:not(:first-of-type) {
+            padding-top: 19px;
+        }
+    }
+
+    &__quote{
+        font-size: 30px;
+        line-height: 37px;
+        background: $gr-red-text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        padding-top: 30px;
+    }
+}
+
+@media (min-width: 678px) {
+
+    .more{
+        padding-top: 60px;
+
+        &__quote{
+            font-size: 38px;
+            line-height: 46px;
+        }
+    }
+}
+
+@media (min-width: 934px) {
+
+    .more{
+        display: flex;
+        align-items: flex-start;
+
+        &__text{
+            max-width: 542px;
+            padding-right: 60px;
+        }
+
+        &__quote{
+            padding-top: 0;
+            max-width: 362px;
+        }
+    }
+}
+
+@media (min-width: 1350px) {
+
+    .more{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        &__text{
+            max-width: 657px;
+            padding-right: 0;
+        }
+    }
+}
