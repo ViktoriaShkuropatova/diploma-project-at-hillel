@@ -343,6 +343,9 @@ html {
   .gradient__simvol {
     background-size: cover;
   }
+  .gradient__simvol::before {
+    display: none;
+  }
 }
 @media (min-width: 934px) {
   .gradient__simvol {
@@ -1256,9 +1259,6 @@ html {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
